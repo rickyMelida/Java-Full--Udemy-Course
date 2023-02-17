@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        MetodosString metodos = new MetodosString("PARALELEPIDO");
+       AnalisisAlgoritmo ana = new AnalisisAlgoritmo("datos");
 
-        System.out.println(metodos.GetExtension("miarchivo.js"));
+       ana.Algoritmo1();
     }
 }

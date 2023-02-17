@@ -34,4 +34,19 @@ public class MetodosString {
 
         return result;
     }
+
+    public void StrToArray() {
+        char [] arreglo = MyString.toCharArray();
+        String archivo = "mi.archivo.txt";
+        
+        String salida = "";
+        
+        for(int i=0;i<arreglo.length;i++) {
+            salida  += arreglo[i];
+        }
+
+        System.out.println("toCharArray: " + salida );
+        System.out.println(MyString.split(":")[1]);
+        //System.out.println(archivo);
+    }
 }
