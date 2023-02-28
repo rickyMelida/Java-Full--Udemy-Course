@@ -17,4 +17,16 @@ public class LogicsOperators {
 
         System.out.println(b);
     }
+
+    public String NumeroMayor(int num1, int num2, int num3) {
+        int max=0;
+
+        max = (num1 > num2) ? num1 : num2;
+        max = (max > num3) ? max : num3;
+
+        return "El numero mayor es " + max;
+
+    }
+
+    //public Boolean EsInstancia(var a, )
 }

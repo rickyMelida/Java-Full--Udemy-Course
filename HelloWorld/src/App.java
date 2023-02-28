@@ -4,15 +4,17 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ingrese el nombre del usuario: ");
-        String user = scanner.next();
-        System.out.println("Ingrese su password: ");
+        System.out.println("Ingrese el primer numero: ");
+        int num1 = scanner.nextInt();
 
-        String password = scanner.next();
+        System.out.println("Ingrese el segundo numero: ");
+        int num2 = scanner.nextInt();
 
-        LogicOperatorLogin login = new LogicOperatorLogin();
+        System.out.println("Ingrese el tercer numero: ");
+        int num3 = scanner.nextInt();
 
-        System.out.println(login.SigIn(user, password));
+        LogicsOperators logic = new LogicsOperators("");
 
+        System.out.println(logic.NumeroMayor(num1, num2, num3));
     }
 }
