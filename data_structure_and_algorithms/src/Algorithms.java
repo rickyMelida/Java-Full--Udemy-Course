@@ -2,7 +2,7 @@ public class Algorithms {
 
     public void InsertSort() {
         int[] arr = { 5, 3, 4, 8, 7, 5, 1, 2, 3 };
-        for(int elem:arr) System.out.print(elem + " ");
+       // for(int elem:arr) System.out.print(elem + " ");
  
         for (int j = 1; j < arr.length; j++) {
             int current = arr[j];
@@ -14,9 +14,9 @@ public class Algorithms {
             }
             arr[i + 1] = current;
         }
+        
         System.out.println("");
-        for(int elem:arr) {
-            System.out.print(elem + " ");
-        }
+        for(int elem:arr) System.out.print(elem + " ");
+        
     }
 }

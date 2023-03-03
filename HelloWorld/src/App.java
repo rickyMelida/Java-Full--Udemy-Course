@@ -2,19 +2,12 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Scanner scanner = new Scanner(System.in);
+        String[] names = { "Andres", "Pepe", "Maria", "Paco", "Lalo", "Bea", "Pato", "Pepa" };
 
-        System.out.println("Ingrese el primer numero: ");
-        int num1 = scanner.nextInt();
+        Iterators ite = new Iterators(names);
+        //ite.SimpleIteration();
 
-        System.out.println("Ingrese el segundo numero: ");
-        int num2 = scanner.nextInt();
+        ite.SearchName();
 
-        System.out.println("Ingrese el tercer numero: ");
-        int num3 = scanner.nextInt();
-
-        LogicsOperators logic = new LogicsOperators("");
-
-        System.out.println(logic.NumeroMayor(num1, num2, num3));
     }
 }
